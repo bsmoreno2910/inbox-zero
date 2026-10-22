@@ -297,7 +297,13 @@ jobs:
           fi
           docker buildx imagetools create -t "$IMAGE:stable" "$IMAGE:$tag"
           if [[ -z "$DEPLOY_WEBHOOK" ]]; then echo "::warning::PTBR_EASYPANEL_DEPLOY_WEBHOOK not set; :stable moved but Easypanel was not called"; exit 0; fi
-          curl -fsS --retry 3 --max-time 60 "$DEPLOY_WEBHOOK" -o /dev/null
+          # curl's own errors are discarded: they can name the webhook host, and this
+          # repository's logs are public.
+          code=$(curl -s --connect-timeout 15 --max-time 60 --retry 2 -o /dev/null -w '%{http_code}' "$DEPLOY_WEBHOOK" 2>/dev/null) || code=000
+          if [[ "$code" != 2* ]]; then
+            echo "::error::Easypanel deploy webhook failed (HTTP $code; 000 = could not connect). :stable already points to $tag, so clicking Implantar in Easypanel deploys it. Check that PTBR_EASYPANEL_DEPLOY_WEBHOOK uses the panel's public https address."
+            exit 1
+          fi
           if [[ -n "$APP_URL" ]]; then
             for _ in $(seq 1 40); do
               if curl -fsS "$APP_URL/login" | grep -q "data-ptbr-build=\"$tag\""; then echo "live: $tag"; exit 0; fi
