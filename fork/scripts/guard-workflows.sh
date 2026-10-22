@@ -4,7 +4,7 @@
 # upstream workflow files are registered (and enabled) when GitHub first sees them.
 set -euo pipefail
 : "${GITHUB_REPOSITORY:?}" "${GH_TOKEN:?}"
-allow='^\.github/workflows/ptbr(-ci)?\.yml$'
+allow='^\.github/workflows/ptbr(-ci|-cron)?\.yml$'
 gh api "repos/$GITHUB_REPOSITORY/actions/workflows" --paginate \
   --jq '.workflows[] | select(.state=="active") | "\(.id)\t\(.path)"' |
 while IFS=$'\t' read -r id wf_path; do

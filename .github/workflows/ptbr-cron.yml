@@ -1,0 +1,34 @@
+# Scheduled calls the self-hosted Inbox Zero needs (upstream ships these as a
+# separate cron container, which a single Easypanel service does not have).
+# /api/watch/all renews the Outlook change-notification subscriptions; without
+# it, new mail stops reaching Inbox Zero after the subscriptions expire (~3 days).
+name: ptbr-cron
+
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: production
+    steps:
+      - name: Renew mailbox subscriptions (/api/watch/all)
+        env:
+          APP_URL: ${{ vars.PTBR_APP_URL }}
+          CRON_SECRET: ${{ secrets.PTBR_CRON_SECRET }}
+        run: |
+          if [[ -z "$APP_URL" || -z "$CRON_SECRET" ]]; then
+            echo "::warning::Set the PTBR_APP_URL variable and the PTBR_CRON_SECRET secret (same value as CRON_SECRET in Easypanel)."
+            exit 0
+          fi
+          status=$(curl -sS -o response.txt -w '%{http_code}' --max-time 120 \
+            -H "Authorization: Bearer $CRON_SECRET" "$APP_URL/api/watch/all")
+          # The response lists mailboxes; this repository is public, so it is not printed.
+          echo "HTTP $status"
+          if [[ "$status" != 2* ]]; then echo "::error::/api/watch/all returned HTTP $status"; exit 1; fi
