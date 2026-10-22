@@ -122,7 +122,7 @@ jobs:
         run: pnpm exec prisma generate
       - name: Type-check pristine upstream (baseline)
         working-directory: src/apps/web
-        run: pnpm exec tsc --noEmit -p tsconfig.json 2>&1 | grep -E 'error TS' | sed -E 's/\([0-9]+,[0-9]+\)//' | sort > "$RUNNER_TEMP/tsc-base.txt" || true
+        run: bash "$GITHUB_WORKSPACE/overlay/fork/scripts/tsc-errors.sh" "$RUNNER_TEMP/tsc-base.txt"
       - name: Apply the pt-BR overlay
         run: |
           npm ci --prefix overlay/fork/i18n --ignore-scripts --no-audit --no-fund
@@ -130,10 +130,18 @@ jobs:
       - name: Type-check translated tree (fail only on new errors)
         working-directory: src/apps/web
         run: |
-          pnpm exec tsc --noEmit -p tsconfig.json 2>&1 | grep -E 'error TS' | sed -E 's/\([0-9]+,[0-9]+\)//' | sort > "$RUNNER_TEMP/tsc-new.txt" || true
-          new=$(comm -13 "$RUNNER_TEMP/tsc-base.txt" "$RUNNER_TEMP/tsc-new.txt")
-          echo "baseline errors: $(wc -l < "$RUNNER_TEMP/tsc-base.txt"), translated errors: $(wc -l < "$RUNNER_TEMP/tsc-new.txt")"
-          if [[ -n "$new" ]]; then echo "::error::the overlay introduced TypeScript errors"; echo "$new" | head -50; exit 1; fi
+          bash "$GITHUB_WORKSPACE/overlay/fork/scripts/tsc-errors.sh" "$RUNNER_TEMP/tsc-new.txt"
+          # comm on sorted lines is a multiset difference: one more error of the same
+          # code in the same file counts as new.
+          LC_ALL=C comm -13 "$RUNNER_TEMP/tsc-base.txt" "$RUNNER_TEMP/tsc-new.txt" > "$RUNNER_TEMP/tsc-added.txt"
+          if [[ -s "$RUNNER_TEMP/tsc-added.txt" ]]; then
+            echo "::error::the overlay introduced TypeScript errors"
+            head -50 "$RUNNER_TEMP/tsc-added.txt"
+            cut -d' ' -f1 "$RUNNER_TEMP/tsc-added.txt" | sort -u > "$RUNNER_TEMP/tsc-files.txt"
+            grep -F -f "$RUNNER_TEMP/tsc-files.txt" "$RUNNER_TEMP/tsc-new.txt.raw" | head -50 || true
+            exit 1
+          fi
+          echo "no new type errors"
 
   build:
     needs: resolve
