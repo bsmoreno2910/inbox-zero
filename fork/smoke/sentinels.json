@@ -1,0 +1,4 @@
+{
+  "$comment": "Texts that must appear on /login of a translated image (plain ASCII to avoid HTML-encoding differences).",
+  "login": ["Entrar com Microsoft", "Entrar com o Google"]
+}

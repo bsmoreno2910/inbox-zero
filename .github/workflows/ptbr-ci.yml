@@ -1,0 +1,36 @@
+# Checks changes to the overlay itself (no secrets, no Docker).
+name: ptbr-ci
+
+on:
+  pull_request:
+    branches: [ptbr]
+  push:
+    branches-ignore: [ptbr, main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          path: overlay
+          persist-credentials: false
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          repository: elie222/inbox-zero
+          path: src
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+      - name: Unit tests, lint and a dry run against upstream main
+        run: |
+          npm ci --prefix overlay/fork/i18n --ignore-scripts --no-audit --no-fund
+          node --test overlay/fork/i18n/test/*.test.mjs
+          node overlay/fork/i18n/src/cli.mjs lint
+          node overlay/fork/i18n/src/cli.mjs apply --src src --verify strict --dry-run --out out
+          node overlay/fork/i18n/src/cli.mjs report --out out --summary "$GITHUB_STEP_SUMMARY"

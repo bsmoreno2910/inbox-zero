@@ -1,0 +1,20 @@
+{
+  "$comment": "Render-only contexts that may be translated. Anything not listed stays English.",
+  "attributes": [
+    "title", "label", "aria-label", "aria-description", "aria-placeholder", "aria-roledescription",
+    "alt", "placeholder", "description", "content", "tooltip", "tooltipText", "confirmText",
+    "cancelText", "emptyMessage", "emptyText", "actionText", "buttonText", "helperText", "heading",
+    "eyebrow", "subtitle", "triggerLabel", "addButtonLabel", "removeAriaLabel", "ariaLabel",
+    "labelRight", "explainText", "inProgressText", "markDoneText", "errorText", "loadingLabel",
+    "featureLabel", "imageAlt", "timeEstimate", "suggestion", "text", "message"
+  ],
+  "objectKeys": [
+    "label", "title", "description", "tooltip", "placeholder", "subtitle", "helperText",
+    "actionLabel", "buttonText", "confirmText", "cta", "question", "answer", "emptyMessage"
+  ],
+  "toastObjectFunctions": ["toastError", "toastSuccess", "toastInfo", "toastUndo"],
+  "toastObjectProps": ["title", "description", "message"],
+  "excludedCalleePattern": "(^|\\.)([A-Za-z]*Action|execute[A-Za-z]*|mutate|mutateAsync|trigger|fetch|capture|track[A-Za-z]*|useForm|setValue|reset|posthog\\.[A-Za-z]+|JSON\\.stringify|postMessage)$",
+  "excludedAncestorProps": ["defaultValues", "values", "body", "data", "payload", "params", "properties", "metadataJson"],
+  "zodMethods": ["min", "max", "length", "email", "url", "regex", "nonempty", "refine"]
+}

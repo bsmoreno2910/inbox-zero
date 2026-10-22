@@ -1,0 +1,30 @@
+{
+  "$comment": "Paths are relative to the upstream repo root. Only files matching include and not deny are rewritten. The identifier guard still reads every file.",
+  "include": [
+    "^apps/web/app/\\(app\\)/",
+    "^apps/web/components/",
+    "^apps/web/providers/",
+    "^apps/web/hooks/",
+    "^apps/web/lib/shortcuts/",
+    "^apps/web/app/organizations/",
+    "^apps/web/app/\\(landing\\)/(login|welcome|welcome-redirect|welcome-upgrade|connect-mailbox|logout)/",
+    "^apps/web/app/(layout|global-error|not-found)\\.tsx$",
+    "^packages/mail-ui/src/",
+    "^packages/email-editor/src/"
+  ],
+  "deny": [
+    "/utils/ai/",
+    "^apps/web/app/api/",
+    "onboarding/config\\.ts$",
+    "/utils/rule/",
+    "/utils/categories\\.ts$",
+    "/utils/label\\.ts$",
+    "/split-inbox/",
+    "/error-messages/",
+    "/constants/user-roles\\.ts$",
+    "/utils/outlook/",
+    "/utils/gmail/",
+    "/utils/email/",
+    "\\.server\\.tsx?$"
+  ]
+}

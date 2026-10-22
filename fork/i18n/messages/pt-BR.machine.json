@@ -1,0 +1,2291 @@
+{
+  " (default)": {
+    "t": " (padrão)",
+    "src": "f1aeec6a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  " For Outlook, we can extract from recent sent emails or you can enter manually.": {
+    "t": " No Outlook, podemos extrair dos e-mails enviados recentemente ou você pode inserir manualmente.",
+    "src": "eb925864",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  " You can load signatures from Gmail or enter manually.": {
+    "t": " Você pode carregar assinaturas do Gmail ou inserir manualmente.",
+    "src": "443f72af",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  " was": {
+    "t": " foi",
+    "src": "a2f22d39",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  " • Automated": {
+    "t": " • Automatizada",
+    "src": "5bfda3f7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  " • Runs on threads": {
+    "t": " • Executa em conversas",
+    "src": "7284a9b0",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "(you)": {
+    "t": "(você)",
+    "src": "1647df12",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "). Internal comments remain available.": {
+    "t": "). Os comentários internos continuam disponíveis.",
+    "src": "d77f93b3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  ". Updating also moves your availability hours and booking link to this timezone.": {
+    "t": ". A atualização também move seus horários de disponibilidade e o link de agendamento para este fuso horário.",
+    "src": "1c242d04",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  ". Your emails aren't affected.": {
+    "t": ". Seus e-mails não são afetados.",
+    "src": "c59d7275",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "/month": {
+    "t": "/mês",
+    "src": "ab0cc392",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "/user": {
+    "t": "/usuário",
+    "src": "82b076b7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "/user /month": {
+    "t": "/usuário /mês",
+    "src": "46dfc68b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "0 of {0} completed": {
+    "t": "0 de {0} concluídos",
+    "src": "5b26093b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "1 minute": {
+    "t": "1 minuto",
+    "src": "62957ecf",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "2 minutes": {
+    "t": "2 minutos",
+    "src": "1dd3e663",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "5 minutes": {
+    "t": "5 minutos",
+    "src": "3aa5819e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "A fast email app for Gmail and Outlook. Free on web, desktop, and iPhone.": {
+    "t": "Um app de e-mail rápido para Gmail e Outlook. Gratuito na web, no desktop e no iPhone.",
+    "src": "b002b13f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "A fast, free app for reading and sending your email.": {
+    "t": "Um app rápido e gratuito para ler e enviar seus e-mails.",
+    "src": "1260df53",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "AI assistant": {
+    "t": "Assistente de IA",
+    "src": "fc7ba354",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "AI drafts and a sorted inbox from ${0}/month, half what Superhuman charges.": {
+    "t": "Rascunhos com IA e caixa de entrada organizada a partir de ${0}/mês, metade do que a Superhuman cobra.",
+    "src": "888c87da",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "AI labels emails and drafts replies. Keep using Gmail or Outlook.": {
+    "t": "A IA marca e-mails e redige respostas. Continue usando o Gmail ou o Outlook.",
+    "src": "b288f6c1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Account deleted!": {
+    "t": "Conta excluída!",
+    "src": "7581ac05",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Activity": {
+    "t": "Atividade",
+    "src": "81c0d915",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Add folder": {
+    "t": "Adicionar pasta",
+    "src": "03eb1a44",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Add site": {
+    "t": "Adicionar site",
+    "src": "5d791c95",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Add teammate": {
+    "t": "Adicionar colega",
+    "src": "79c34033",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Adding to knowledge base...": {
+    "t": "Adicionando à base de conhecimento...",
+    "src": "ac581fa6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Additional information used by the AI to categorize senders": {
+    "t": "Informações adicionais usadas pela IA para categorizar remetentes",
+    "src": "5b188f6e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "All clear": {
+    "t": "Tudo em dia",
+    "src": "360e1182",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "All senders": {
+    "t": "Todos os remetentes",
+    "src": "87284568",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Already in {0}": {
+    "t": "Já está em {0}",
+    "src": "d5c2dd66",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Also archive existing emails when you unsubscribe": {
+    "t": "Também arquivar os e-mails existentes ao cancelar a inscrição",
+    "src": "ceb80bd4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "App sections": {
+    "t": "Seções do app",
+    "src": "6d82babf",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "App sign-in didn't finish": {
+    "t": "O login no app não foi concluído",
+    "src": "0e9bd0fc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Apply": {
+    "t": "Aplicar",
+    "src": "cfea419c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Approve {0} for your Microsoft 365 organization.": {
+    "t": "Aprove o {0} para a sua organização do Microsoft 365.",
+    "src": "ee6b8865",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archive existing emails": {
+    "t": "Arquivar e-mails existentes",
+    "src": "4a02216b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archive on unsubscribe": {
+    "t": "Arquivar ao cancelar inscrição",
+    "src": "6102cac6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archive shipping updates once they're delivered": {
+    "t": "Arquivar atualizações de envio depois da entrega",
+    "src": "3bcfcc10",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archive, delete, or mark emails as read in bulk by category to quickly clean up your inbox.": {
+    "t": "Arquive, exclua ou marque e-mails como lidos em massa por categoria para limpar sua caixa de entrada rapidamente.",
+    "src": "4f1a99dd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving": {
+    "t": "Arquivando",
+    "src": "7f96b2a5",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving \"{0}\" category...": {
+    "t": "Arquivando a categoria \"{0}\"...",
+    "src": "87260245",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving category...": {
+    "t": "Arquivando categoria...",
+    "src": "497a9b02",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving emails from {0}...": {
+    "t": "Arquivando e-mails de {0}...",
+    "src": "ac343572",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving senders...{0}": {
+    "t": "Arquivando remetentes...{0}",
+    "src": "b078ab60",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Archiving {0} of {1} senders...{2}": {
+    "t": "Arquivando {0} de {1} remetentes...{2}",
+    "src": "2ccb0d7d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Attachment preview": {
+    "t": "Pré-visualização do anexo",
+    "src": "cc8da619",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Auto-archive": {
+    "t": "Arquivar automaticamente",
+    "src": "3f7de595",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Auto-archive future emails": {
+    "t": "Arquivar automaticamente e-mails futuros",
+    "src": "1b34f07e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Auto-archive these senders?": {
+    "t": "Arquivar automaticamente estes remetentes?",
+    "src": "3bd5bb64",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Auto-archived": {
+    "t": "Arquivado automaticamente",
+    "src": "3c396f15",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Automated monitoring services and error reporting systems": {
+    "t": "Serviços de monitoramento automatizado e sistemas de relatório de erros",
+    "src": "11f5b2cf",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Automatically categorize new senders when they email you": {
+    "t": "Categorizar automaticamente novos remetentes quando enviarem e-mails para você",
+    "src": "3330fe39",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Both": {
+    "t": "Ambos",
+    "src": "1f469838",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Categorizing senders...": {
+    "t": "Categorizando remetentes...",
+    "src": "d4831306",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Categorizing senders... This might take a while.": {
+    "t": "Categorizando remetentes... Isso pode demorar um pouco.",
+    "src": "c5509488",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Charitable organizations, NGOs, social impact organizations, and philanthropic foundations": {
+    "t": "Organizações beneficentes, ONGs, organizações de impacto social e fundações filantrópicas",
+    "src": "65aaa685",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Check your internet connection and try again.": {
+    "t": "Verifique sua conexão com a internet e tente novamente.",
+    "src": "86d8acd3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Checking access…": {
+    "t": "Verificando acesso…",
+    "src": "c5108c02",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Click to show all senders": {
+    "t": "Clique para mostrar todos os remetentes",
+    "src": "29bf426f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Close comments": {
+    "t": "Fechar comentários",
+    "src": "39b403fb",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Cold email blocker": {
+    "t": "Bloqueador de e-mails não solicitados",
+    "src": "9e95e05a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Comment": {
+    "t": "Comentar",
+    "src": "153d7a58",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Comment and @mention a teammate": {
+    "t": "Comente e @mencione um colega",
+    "src": "3425c91b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Comment deleted": {
+    "t": "Comentário excluído",
+    "src": "ff337dce",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Comments are never sent as email. @mention a teammate to share this conversation.": {
+    "t": "Os comentários nunca são enviados como e-mail. @Mencione um colega para compartilhar esta conversa.",
+    "src": "7e4e980d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Companies, hiring platforms, and recruiters you've applied to or are interviewing with for positions": {
+    "t": "Empresas, plataformas de contratação e recrutadores com quem você se candidatou ou está em processo seletivo",
+    "src": "dd7dc260",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Completed {0}": {
+    "t": "{0} concluído",
+    "src": "0eb2425d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Connect a Google or Microsoft mailbox to continue to {0}.": {
+    "t": "Conecte uma caixa de e-mail do Google ou da Microsoft para continuar no {0}.",
+    "src": "16606f17",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Connected. {0} {1} available.": {
+    "t": "Conectado. {0} {1} disponíveis.",
+    "src": "e4852f98",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Continue for free": {
+    "t": "Continuar gratuitamente",
+    "src": "31046862",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Conversation shared by": {
+    "t": "Conversa compartilhada por",
+    "src": "e245ba0b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Conversation shared by you": {
+    "t": "Conversa compartilhada por você",
+    "src": "dbe972e6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Conversation shared by {0}": {
+    "t": "Conversa compartilhada por {0}",
+    "src": "23385883",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Cookie consent": {
+    "t": "Consentimento de cookies",
+    "src": "1a9a0aef",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Cookie settings": {
+    "t": "Configurações de cookies",
+    "src": "9e0cba87",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Could not check conversation access. Retry or refresh this page.": {
+    "t": "Não foi possível verificar o acesso à conversa. Tente novamente ou atualize esta página.",
+    "src": "224afbd5",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Could not connect to {0}": {
+    "t": "Não foi possível conectar a {0}",
+    "src": "4457a025",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Could not find this draft in your mailbox to send its attachments. Reopen it and try again.": {
+    "t": "Não foi possível encontrar este rascunho na sua caixa de e-mail para enviar os anexos. Abra-o novamente e tente outra vez.",
+    "src": "4edb0da2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Could not load activity.": {
+    "t": "Não foi possível carregar a atividade.",
+    "src": "4a27499b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Could not remove {0}.": {
+    "t": "Não foi possível remover {0}.",
+    "src": "fbbada27",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Couldn't queue archiving": {
+    "t": "Não foi possível agendar o arquivamento",
+    "src": "64dddf56",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Couldn't translate this email": {
+    "t": "Não foi possível traduzir este e-mail",
+    "src": "0a858603",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Create rule for sender": {
+    "t": "Criar regra para o remetente",
+    "src": "aad43c5f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Created label \"{0}\"": {
+    "t": "Marcador \"{0}\" criado",
+    "src": "84e17baa",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Creating label \"{0}\"...": {
+    "t": "Criando marcador \"{0}\"...",
+    "src": "1f41dc02",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Creating rule \"{0}\"...": {
+    "t": "Criando regra \"{0}\"...",
+    "src": "851d23b2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Current and potential investors, investment firms, and venture capital contacts": {
+    "t": "Investidores atuais e potenciais, empresas de investimento e contatos de venture capital",
+    "src": "f4ee5995",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Delete all emails": {
+    "t": "Excluir todos os e-mails",
+    "src": "7db1bb3a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Delete comment": {
+    "t": "Excluir comentário",
+    "src": "4be7edcf",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Delete your Inbox Zero account?": {
+    "t": "Excluir sua conta do Inbox Zero?",
+    "src": "a8b6252b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleted emails from {0}": {
+    "t": "E-mails de {0} excluídos",
+    "src": "c04dd6fa",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleted rule \"{0}\"": {
+    "t": "Regra \"{0}\" excluída",
+    "src": "9a6e2515",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleting account...": {
+    "t": "Excluindo conta...",
+    "src": "1c055696",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleting all emails from {0}": {
+    "t": "Excluindo todos os e-mails de {0}",
+    "src": "58830637",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleting emails from {0}...": {
+    "t": "Excluindo e-mails de {0}...",
+    "src": "8beb2a29",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Deleting rule...": {
+    "t": "Excluindo regra...",
+    "src": "04e548f8",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Discuss an email privately by @mentioning a teammate in a comment.": {
+    "t": "Discuta um e-mail em particular @mencionando um colega em um comentário.",
+    "src": "e4ee7ef1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Discussion options": {
+    "t": "Opções da discussão",
+    "src": "499aa820",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Discussions": {
+    "t": "Discussões",
+    "src": "0474a6c6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Documentation sites": {
+    "t": "Sites de documentação",
+    "src": "adca617c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Download": {
+    "t": "Baixar",
+    "src": "a479c9c3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Download message": {
+    "t": "Baixar mensagem",
+    "src": "f9c32408",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Download on the App Store": {
+    "t": "Baixar na App Store",
+    "src": "a9096aaa",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Download the latest desktop app": {
+    "t": "Baixe a versão mais recente do app para desktop",
+    "src": "4f0889b3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Downloading Inbox Zero {0}": {
+    "t": "Baixando o Inbox Zero {0}",
+    "src": "6d82d5f6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Drafts, organization, and rules": {
+    "t": "Rascunhos, organização e regras",
+    "src": "bc34a0dc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Edit settings": {
+    "t": "Editar configurações",
+    "src": "aea819e4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Email addresses belonging to customers, including those reaching out for support or engaging with customer success": {
+    "t": "Endereços de e-mail de clientes, incluindo quem entra em contato com o suporte ou com o sucesso do cliente",
+    "src": "7ae83099",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Email app": {
+    "t": "App de e-mail",
+    "src": "e093e7be",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Email content is unavailable (": {
+    "t": "O conteúdo do e-mail não está disponível (",
+    "src": "d34b1e49",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Email threads your teammates share with you to discuss in private comments.": {
+    "t": "Conversas de e-mail que seus colegas compartilham com você para discutir em comentários privados.",
+    "src": "422ffea5",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Emails needing replies": {
+    "t": "E-mails que precisam de resposta",
+    "src": "15ca08f6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Event organizers, conference coordinators, and speaking opportunity contacts for industry events": {
+    "t": "Organizadores de eventos, coordenadores de conferências e contatos de oportunidades de palestra em eventos do setor",
+    "src": "5785809b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Every Gmail and Outlook account in one inbox, on the web, Mac, Windows, and iPhone. Like Superhuman, but free.": {
+    "t": "Todas as contas do Gmail e do Outlook em uma única caixa de entrada, na web, no Mac, no Windows e no iPhone. Como a Superhuman, mas gratuito.",
+    "src": "36728a85",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Expand preview text": {
+    "t": "Expandir texto de pré-visualização",
+    "src": "2569668a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Failed to link account. Please try again.": {
+    "t": "Falha ao vincular a conta. Tente novamente.",
+    "src": "d6d57106",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Failed to update documentation sites": {
+    "t": "Falha ao atualizar os sites de documentação",
+    "src": "e6140f3d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Fly through email on desktop and mobile": {
+    "t": "Voe pelos e-mails no desktop e no celular",
+    "src": "2df4f366",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Found {0} memories": {
+    "t": "{0} memórias encontradas",
+    "src": "cb4b81ee",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Free to use": {
+    "t": "Gratuito",
+    "src": "0b081a8e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Free trial": {
+    "t": "Teste gratuito",
+    "src": "22357ca6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Future events": {
+    "t": "Eventos futuros",
+    "src": "90322b90",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Get a summary of emails matched by the rules you pick, on your schedule.": {
+    "t": "Receba um resumo dos e-mails que correspondem às regras escolhidas, no horário que você definir.",
+    "src": "1bc75159",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Get it on Google Play": {
+    "t": "Disponível no Google Play",
+    "src": "e240e8bc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Get started with {0}": {
+    "t": "Comece a usar o {0}",
+    "src": "dc6460d2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Get the latest desktop app": {
+    "t": "Instale a versão mais recente do app para desktop",
+    "src": "9f804e0e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Getting started with Bulk Archive": {
+    "t": "Primeiros passos com o Arquivamento em massa",
+    "src": "ffcfe098",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Getting started with Cold Email Blocker": {
+    "t": "Primeiros passos com o Bloqueador de e-mails não solicitados",
+    "src": "1609deb0",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Getting started with Slack and Telegram": {
+    "t": "Primeiros passos com Slack e Telegram",
+    "src": "beb4c660",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Go to inbox": {
+    "t": "Ir para a caixa de entrada",
+    "src": "5f9aa7f3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Half the price of Superhuman": {
+    "t": "Metade do preço da Superhuman",
+    "src": "b6b79b61",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Hide Cc and Bcc": {
+    "t": "Ocultar Cc e Cco",
+    "src": "40f19212",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "How do you want to use": {
+    "t": "Como você quer usar o",
+    "src": "fe8bb435",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "In inbox": {
+    "t": "Na caixa de entrada",
+    "src": "10bef555",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Inbox zero": {
+    "t": "Caixa de entrada zerada",
+    "src": "97a5387c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Include 'Sent with": {
+    "t": "Incluir 'Enviado com",
+    "src": "79731eac",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Include senders without an unsubscribe link": {
+    "t": "Incluir remetentes sem link de cancelamento de inscrição",
+    "src": "72a5caf9",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Inline image content does not match its file type.": {
+    "t": "O conteúdo da imagem incorporada não corresponde ao tipo de arquivo.",
+    "src": "f6160f77",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Internal comment": {
+    "t": "Comentário interno",
+    "src": "3389d268",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Internal discussion": {
+    "t": "Discussão interna",
+    "src": "dd180b76",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Internal team members with @company.com email addresses, including employees and colleagues within our organization": {
+    "t": "Membros internos da equipe com endereços de e-mail @empresa.com, incluindo funcionários e colegas da nossa organização",
+    "src": "1f1f7795",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Invalid delay value": {
+    "t": "Valor de atraso inválido",
+    "src": "d3fea2f7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Job applicants, potential hires, and candidates in your interview pipeline": {
+    "t": "Candidatos a vagas, possíveis contratações e candidatos no seu processo seletivo",
+    "src": "1b034260",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Journalists, media outlets, PR agencies, and industry publications seeking interviews or coverage": {
+    "t": "Jornalistas, veículos de mídia, agências de relações públicas e publicações do setor em busca de entrevistas ou cobertura",
+    "src": "09108710",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Just want the email app? It's free on web, desktop, and iPhone.": {
+    "t": "Quer só o app de e-mail? Ele é gratuito na web, no desktop e no iPhone.",
+    "src": "e8ccf927",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Keep getting these emails": {
+    "t": "Continuar recebendo estes e-mails",
+    "src": "83a9e19d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Learn how to archive whole categories of old email at once.": {
+    "t": "Saiba como arquivar categorias inteiras de e-mails antigos de uma só vez.",
+    "src": "73d9ae1a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Learn how to get important emails in Slack or Telegram and send drafted replies from there.": {
+    "t": "Saiba como receber e-mails importantes no Slack ou no Telegram e enviar de lá as respostas preparadas.",
+    "src": "c907c607",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Learn how to review blocked cold emails, rescue a sender, and choose what happens to cold emails.": {
+    "t": "Saiba como revisar e-mails não solicitados bloqueados, recuperar um remetente e escolher o que acontece com esses e-mails.",
+    "src": "5c7aaedb",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Leave this blank to keep the current API key, or enter a new key to replace it.": {
+    "t": "Deixe em branco para manter a chave de API atual ou informe uma nova chave para substituí-la.",
+    "src": "8964cf74",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Load older activity": {
+    "t": "Carregar atividades anteriores",
+    "src": "c91266e1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Load older comments": {
+    "t": "Carregar comentários anteriores",
+    "src": "0f208e96",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Loaded account overview": {
+    "t": "Visão geral da conta carregada",
+    "src": "29e4b583",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Loaded assistant capabilities": {
+    "t": "Recursos do assistente carregados",
+    "src": "c152e5c3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Loading email…": {
+    "t": "Carregando e-mail…",
+    "src": "855888e3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Loading message…": {
+    "t": "Carregando mensagem…",
+    "src": "2678479b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Loading video": {
+    "t": "Carregando vídeo",
+    "src": "c18920c3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Log in to {0}.": {
+    "t": "Entre no {0}.",
+    "src": "77b3e09a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Look for the \"{0}\" category in Outlook.": {
+    "t": "Procure a categoria \"{0}\" no Outlook.",
+    "src": "a99244bd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Mail navigation": {
+    "t": "Navegação do e-mail",
+    "src": "ce769740",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Meet the Inbox Zero email app": {
+    "t": "Conheça o app de e-mail do Inbox Zero",
+    "src": "64bf235c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Meet your new email app": {
+    "t": "Conheça seu novo app de e-mail",
+    "src": "95aff07e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Meeting notetaker": {
+    "t": "Anotador de reuniões",
+    "src": "8eedf3e6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Memory saved": {
+    "t": "Memória salva",
+    "src": "c7d968ff",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Mention a teammate": {
+    "t": "Mencionar um colega",
+    "src": "4121f1af",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Microsoft sign-in was canceled before {0} received the required permissions. Please try again and complete the consent screen.": {
+    "t": "O login da Microsoft foi cancelado antes de o {0} receber as permissões necessárias. Tente novamente e conclua a tela de consentimento.",
+    "src": "4b736bb8",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Move to inbox": {
+    "t": "Mover para a caixa de entrada",
+    "src": "3d0700bd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Move to review": {
+    "t": "Mover para revisão",
+    "src": "620bd1b2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Moved {0} to review": {
+    "t": "{0} movido para revisão",
+    "src": "896c7c23",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Mute": {
+    "t": "Silenciar",
+    "src": "0f097348",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "New senders will show up here as they arrive.": {
+    "t": "Novos remetentes aparecerão aqui conforme chegarem.",
+    "src": "e0683f30",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Next, open Channels to choose where Slack messages go.": {
+    "t": "Agora abra Canais para escolher para onde vão as mensagens do Slack.",
+    "src": "995c5c2b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No activity in {0}h": {
+    "t": "Sem atividade há {0}h",
+    "src": "953dabb6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No activity yet.": {
+    "t": "Nenhuma atividade ainda.",
+    "src": "8bdea321",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No content available.": {
+    "t": "Nenhum conteúdo disponível.",
+    "src": "72a14179",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No discussions yet": {
+    "t": "Nenhuma discussão ainda",
+    "src": "803034f1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No emails from this sender": {
+    "t": "Nenhum e-mail deste remetente",
+    "src": "ba833a3c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No matching folders.": {
+    "t": "Nenhuma pasta correspondente.",
+    "src": "aed8cee7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No need to switch": {
+    "t": "Não precisa trocar",
+    "src": "efe53f02",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No senders found": {
+    "t": "Nenhum remetente encontrado",
+    "src": "f3d80ecb",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No senders to archive in \"{0}\"": {
+    "t": "Nenhum remetente para arquivar em \"{0}\"",
+    "src": "1b53cbee",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No unsubscribe link: future emails will be archived automatically": {
+    "t": "Sem link de cancelamento: os próximos e-mails serão arquivados automaticamente",
+    "src": "9347e37c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "No, thanks": {
+    "t": "Não, obrigado",
+    "src": "5f5c4384",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "None of this sender's emails are in your inbox": {
+    "t": "Nenhum e-mail deste remetente está na sua caixa de entrada",
+    "src": "cbb02856",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Not shared yet": {
+    "t": "Ainda não compartilhado",
+    "src": "12417253",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Nothing left in {0}.": {
+    "t": "Nada restante em {0}.",
+    "src": "6af04cc2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Nothing left to review": {
+    "t": "Nada mais para revisar",
+    "src": "2c45adca",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Offline access": {
+    "t": "Acesso offline",
+    "src": "7a8288b6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Offline. Reconnect to post your comment.": {
+    "t": "Sem conexão. Reconecte-se para publicar seu comentário.",
+    "src": "118ed0b3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Only senders without an unsubscribe link are left": {
+    "t": "Restam apenas remetentes sem link de cancelamento de inscrição",
+    "src": "89d44fdc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Open in email provider": {
+    "t": "Abrir no provedor de e-mail",
+    "src": "b749bb51",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Open navigation": {
+    "t": "Abrir navegação",
+    "src": "0f53b307",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Open shared view": {
+    "t": "Abrir visualização compartilhada",
+    "src": "14bdbd2c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Open this conversation from": {
+    "t": "Abra esta conversa a partir de",
+    "src": "9f6db0a4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Original message": {
+    "t": "Mensagem original",
+    "src": "2911d585",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Other platforms": {
+    "t": "Outras plataformas",
+    "src": "56a08419",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Our email app with the AI assistant built in.": {
+    "t": "Nosso app de e-mail com o assistente de IA integrado.",
+    "src": "5cb1372f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Payment receipts": {
+    "t": "Comprovantes de pagamento",
+    "src": "ff530e0d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Pending premium grant removed": {
+    "t": "Concessão premium pendente removida",
+    "src": "880b12f1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Permissions updated": {
+    "t": "Permissões atualizadas",
+    "src": "1e99c046",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Play video: {0}": {
+    "t": "Reproduzir vídeo: {0}",
+    "src": "aec8bab4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Post comment": {
+    "t": "Publicar comentário",
+    "src": "92323a77",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Prefer Gmail or Outlook? The AI works there too.": {
+    "t": "Prefere o Gmail ou o Outlook? A IA também funciona neles.",
+    "src": "1524f336",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Preparing to delete rule \"{0}\"...": {
+    "t": "Preparando para excluir a regra \"{0}\"...",
+    "src": "cfde1a3b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Preview emails": {
+    "t": "Pré-visualizar e-mails",
+    "src": "6f719c1c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Preview {0}": {
+    "t": "Pré-visualizar {0}",
+    "src": "0d5a731f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Print": {
+    "t": "Imprimir",
+    "src": "5b221e9c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Privacy policy": {
+    "t": "Política de privacidade",
+    "src": "7ceacdca",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Public docs the assistant can look things up in when drafting replies. Only pages under these URLs are read.": {
+    "t": "Documentação pública que o assistente pode consultar ao redigir respostas. Apenas as páginas sob estas URLs são lidas.",
+    "src": "cf498630",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Read and search mail": {
+    "t": "Ler e pesquisar e-mails",
+    "src": "f458d96c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Read and send email on web, desktop, and iPhone. Add the AI assistant anytime.": {
+    "t": "Leia e envie e-mails na web, no desktop e no iPhone. Adicione o assistente de IA quando quiser.",
+    "src": "1cefde2d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Read learned patterns": {
+    "t": "Padrões aprendidos lidos",
+    "src": "bd0aec1c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Read rule execution details": {
+    "t": "Detalhes da execução da regra lidos",
+    "src": "7a0247cc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Read rules and settings": {
+    "t": "Regras e configurações lidas",
+    "src": "ca4a3349",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Reading email...": {
+    "t": "Lendo e-mail...",
+    "src": "65953d2d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Receipt": {
+    "t": "Comprovante",
+    "src": "f6ce3b6f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Receive briefings by email or in your chat app before meetings with external guests.": {
+    "t": "Receba resumos por e-mail ou no seu app de chat antes de reuniões com convidados externos.",
+    "src": "9b111f1d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Record {0}": {
+    "t": "Gravar {0}",
+    "src": "4f134ef2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Refresh email": {
+    "t": "Atualizar e-mail",
+    "src": "f90a9596",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Reject": {
+    "t": "Recusar",
+    "src": "2b03b592",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Remove just one account instead": {
+    "t": "Remover apenas uma conta",
+    "src": "27f6dcb3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Remove optional access below, or disconnect to remove all access. To add permissions, reconnect from the application and approve the new access.": {
+    "t": "Remova acessos opcionais abaixo ou desconecte para remover todo o acesso. Para adicionar permissões, reconecte pelo aplicativo e aprove o novo acesso.",
+    "src": "b5b53c31",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Removes your Inbox Zero data. Your emails aren't affected.": {
+    "t": "Remove seus dados do Inbox Zero. Seus e-mails não são afetados.",
+    "src": "9cb70cb2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Reply all": {
+    "t": "Responder a todos",
+    "src": "84c27c09",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Resetting analytics...": {
+    "t": "Redefinindo análises...",
+    "src": "03e3d918",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Resize assistant": {
+    "t": "Redimensionar assistente",
+    "src": "304a17fe",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Resize email list": {
+    "t": "Redimensionar lista de e-mails",
+    "src": "7d32a29b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Restart to update": {
+    "t": "Reiniciar para atualizar",
+    "src": "13ada5b1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Retry comment": {
+    "t": "Tentar publicar o comentário novamente",
+    "src": "a27e9be1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Return to the app and start sign-in again. If you're using Inbox Zero Desktop and this keeps happening, install the latest version.": {
+    "t": "Volte ao app e inicie o login novamente. Se estiver usando o Inbox Zero Desktop e isso continuar acontecendo, instale a versão mais recente.",
+    "src": "51982f10",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Saving memory...": {
+    "t": "Salvando memória...",
+    "src": "29251fb4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Scan older emails": {
+    "t": "Verificar e-mails mais antigos",
+    "src": "0793de4c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Scanning older emails…": {
+    "t": "Verificando e-mails mais antigos…",
+    "src": "b0468219",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Search by sender, subject, or any words in the email": {
+    "t": "Pesquise por remetente, assunto ou qualquer palavra do e-mail",
+    "src": "2c17ee7b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Search folders": {
+    "t": "Pesquisar pastas",
+    "src": "196bcf9d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Searching inbox...": {
+    "t": "Pesquisando a caixa de entrada...",
+    "src": "70e81cc4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "See when recipients open emails you send.": {
+    "t": "Veja quando os destinatários abrem os e-mails que você envia.",
+    "src": "18bf7284",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Select files": {
+    "t": "Selecionar arquivos",
+    "src": "ca89063a",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Select sources for AI": {
+    "t": "Selecionar fontes para a IA",
+    "src": "fee4fdc1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Select teammates": {
+    "t": "Selecionar colegas",
+    "src": "9ad6ed70",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Select timezone": {
+    "t": "Selecionar fuso horário",
+    "src": "22e6340f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Send anyway": {
+    "t": "Enviar mesmo assim",
+    "src": "911263fe",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Send anyway?": {
+    "t": "Enviar mesmo assim?",
+    "src": "f221e840",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Sender kept": {
+    "t": "Remetente mantido",
+    "src": "ece5ec98",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Sender moved to review": {
+    "t": "Remetente movido para revisão",
+    "src": "2e046006",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Senders you get a lot of email from but rarely open": {
+    "t": "Remetentes que enviam muitos e-mails que você raramente abre",
+    "src": "c839f515",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Sending will also share all past and future messages in this conversation with": {
+    "t": "O envio também compartilhará todas as mensagens anteriores e futuras desta conversa com",
+    "src": "c031055e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Service providers, suppliers, and business partners who provide products or services to your company": {
+    "t": "Prestadores de serviço, fornecedores e parceiros de negócio que fornecem produtos ou serviços para sua empresa",
+    "src": "3c5ba0cd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Set Theme: {0}": {
+    "t": "Definir tema: {0}",
+    "src": "5e3b1d43",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Set up": {
+    "t": "Configurar",
+    "src": "a5041fda",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Share conversation": {
+    "t": "Compartilhar conversa",
+    "src": "e187ffa1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Shared": {
+    "t": "Compartilhada",
+    "src": "50d0d8dd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Shared by": {
+    "t": "Compartilhada por",
+    "src": "a5fe3b3e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Shared conversation": {
+    "t": "Conversa compartilhada",
+    "src": "1c00627d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Shared participants": {
+    "t": "Participantes do compartilhamento",
+    "src": "53eedaff",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Sharing started": {
+    "t": "Compartilhamento iniciado",
+    "src": "46a8350f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Sharing…": {
+    "t": "Compartilhando…",
+    "src": "ad005909",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Shorten preview text": {
+    "t": "Encurtar texto de pré-visualização",
+    "src": "f58e1ae2",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Show Cc and Bcc": {
+    "t": "Mostrar Cc e Cco",
+    "src": "03ca82eb",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Show original": {
+    "t": "Mostrar original",
+    "src": "68cdead5",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Show them": {
+    "t": "Mostrar",
+    "src": "baa5b3ad",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Show translation": {
+    "t": "Mostrar tradução",
+    "src": "49764443",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Snooze until": {
+    "t": "Adiar até",
+    "src": "464b90fe",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Starred emails": {
+    "t": "E-mails com estrela",
+    "src": "dbcce242",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Startup founders, entrepreneurs, and potential portfolio companies seeking investment or partnerships": {
+    "t": "Fundadores de startups, empreendedores e possíveis empresas de portfólio em busca de investimento ou parcerias",
+    "src": "fb00c626",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Stop sharing": {
+    "t": "Parar de compartilhar",
+    "src": "0e45aee6",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Syncing your mail…": {
+    "t": "Sincronizando seus e-mails…",
+    "src": "d9017cda",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Teammates can read this conversation, including future replies, and leave internal comments. They can't send email from your account.": {
+    "t": "Os colegas podem ler esta conversa, incluindo respostas futuras, e deixar comentários internos. Eles não podem enviar e-mails pela sua conta.",
+    "src": "90e30a19",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Test connection": {
+    "t": "Testar conexão",
+    "src": "ccf66f07",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Testing...": {
+    "t": "Testando...",
+    "src": "15ccc832",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "The app is free. Add the AI only if you want it.": {
+    "t": "O app é gratuito. Adicione a IA só se quiser.",
+    "src": "8dccc7b7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "The page you are looking for could not be found.": {
+    "t": "A página que você procura não foi encontrada.",
+    "src": "8f1a0e6b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "There was an error deleting the emails from {0} :(": {
+    "t": "Ocorreu um erro ao excluir os e-mails de {0} :(",
+    "src": "8931369e",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "There was an error saving the categories. {0}": {
+    "t": "Ocorreu um erro ao salvar as categorias. {0}",
+    "src": "dd320206",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This account doesn't exist in {0} yet. Please select 'No, it's a new account' instead.": {
+    "t": "Esta conta ainda não existe no {0}. Selecione 'Não, é uma conta nova'.",
+    "src": "b8e016dc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This account is already linked to another {0} profile. Sign in to that profile, use a different email account, or contact support if you need help.": {
+    "t": "Esta conta já está vinculada a outro perfil do {0}. Entre nesse perfil, use outra conta de e-mail ou fale com o suporte se precisar de ajuda.",
+    "src": "268d2e39",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This account isn't in an organization. Switch to an account that is to see conversations your teammates share with you.": {
+    "t": "Esta conta não faz parte de uma organização. Troque para uma conta que faça parte para ver as conversas que seus colegas compartilham com você.",
+    "src": "70b8e9f8",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This conversation is shared with:": {
+    "t": "Esta conversa está compartilhada com:",
+    "src": "05089aab",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This email history is incomplete.": {
+    "t": "Este histórico de e-mails está incompleto.",
+    "src": "8a5553d3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This permanently deletes your Inbox Zero data and disconnects": {
+    "t": "Isso exclui permanentemente seus dados do Inbox Zero e desconecta",
+    "src": "6360a469",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "This version of Inbox Zero Desktop can no longer complete sign-in. Download the latest version, reopen the app, and try signing in again.": {
+    "t": "Esta versão do Inbox Zero Desktop não consegue mais concluir o login. Baixe a versão mais recente, abra o app novamente e tente entrar outra vez.",
+    "src": "44adebdb",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "To review": {
+    "t": "Para revisar",
+    "src": "066f77ce",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Toggle 'Sent with {0}'": {
+    "t": "Alternar 'Enviado com {0}'",
+    "src": "589c7bab",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Toggle video conferencing": {
+    "t": "Alternar videoconferência",
+    "src": "dbd7cd2d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Translate": {
+    "t": "Traduzir",
+    "src": "2be17aa1",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Translating…": {
+    "t": "Traduzindo…",
+    "src": "ae47b9e3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Try a different filter or date range.": {
+    "t": "Tente outro filtro ou intervalo de datas.",
+    "src": "49dfb265",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Try the email app free": {
+    "t": "Experimente o app de e-mail gratuitamente",
+    "src": "5ca3dee9",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Turning this off stops the AI from intentionally choosing multiple custom rules for one email. Inbox Zero can still apply more than one rule in a few special cases.": {
+    "t": "Ao desativar, a IA deixa de escolher intencionalmente várias regras personalizadas para um mesmo e-mail. O Inbox Zero ainda pode aplicar mais de uma regra em alguns casos especiais.",
+    "src": "3bee3340",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Unable to download this message": {
+    "t": "Não foi possível baixar esta mensagem",
+    "src": "f9193551",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Unmute": {
+    "t": "Reativar som",
+    "src": "7044c310",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Update Inbox Zero Desktop": {
+    "t": "Atualizar o Inbox Zero Desktop",
+    "src": "747afb26",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Update the desktop app to sign in": {
+    "t": "Atualize o app para desktop para entrar",
+    "src": "ad3fc54b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updated settings{0}": {
+    "t": "Configurações atualizadas{0}",
+    "src": "05bf23dc",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updating inbox...": {
+    "t": "Atualizando a caixa de entrada...",
+    "src": "09892c45",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updating learned patterns for rule \"{0}\"...": {
+    "t": "Atualizando os padrões aprendidos da regra \"{0}\"...",
+    "src": "e7e904b4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updating rule \"{0}\" actions...": {
+    "t": "Atualizando as ações da regra \"{0}\"...",
+    "src": "5ebf8509",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updating rule \"{0}\" conditions...": {
+    "t": "Atualizando as condições da regra \"{0}\"...",
+    "src": "ecd8f28c",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Updating rule \"{0}\"...": {
+    "t": "Atualizando a regra \"{0}\"...",
+    "src": "daf98788",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Upgrade to the Plus plan to enable daily digest emails.": {
+    "t": "Faça upgrade para o plano Plus para ativar os e-mails de resumo diário.",
+    "src": "d16bb0d5",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Upgrade to the Plus plan to include emails in your digest.": {
+    "t": "Faça upgrade para o plano Plus para incluir e-mails no seu resumo.",
+    "src": "3189565b",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Upgrade to the Plus plan to record and summarize your meetings.": {
+    "t": "Faça upgrade para o plano Plus para gravar e resumir suas reuniões.",
+    "src": "02a041c4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Used for meeting briefs, AI scheduling, and your availability hours.": {
+    "t": "Usado nos resumos de reuniões, no agendamento por IA e nos seus horários de disponibilidade.",
+    "src": "acf1df29",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "User has not signed up yet. Premium will be applied when they sign up.": {
+    "t": "O usuário ainda não se cadastrou. O premium será aplicado quando ele se cadastrar.",
+    "src": "4c1cd0bd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "View auto-archive filter": {
+    "t": "Ver filtro de arquivamento automático",
+    "src": "494e6df9",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "We use cookies to understand how people use": {
+    "t": "Usamos cookies para entender como as pessoas usam o",
+    "src": "434b326f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "We value your privacy": {
+    "t": "Valorizamos sua privacidade",
+    "src": "02ad1f8d",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Yes, please": {
+    "t": "Sim, por favor",
+    "src": "c422c202",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "You can add more mailboxes later from Accounts.": {
+    "t": "Você pode adicionar mais caixas de e-mail depois em Contas.",
+    "src": "0558c799",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "You don't have permission to manage organization rules. Only administrators can access this page.": {
+    "t": "Você não tem permissão para gerenciar as regras da organização. Somente administradores podem acessar esta página.",
+    "src": "16e71e46",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "You don't have permission to view organization analytics. Only administrators can access this page.": {
+    "t": "Você não tem permissão para ver as análises da organização. Somente administradores podem acessar esta página.",
+    "src": "a4d01a55",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "You're all caught up. Enjoy the quiet.": {
+    "t": "Você está em dia. Aproveite a calmaria.",
+    "src": "728ac623",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "You're offline": {
+    "t": "Você está sem conexão",
+    "src": "f4d9cea9",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Your access to this conversation has ended.": {
+    "t": "Seu acesso a esta conversa terminou.",
+    "src": "6bdb0f93",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Your draft is saved here; retry when ready.": {
+    "t": "Seu rascunho fica salvo aqui; tente novamente quando quiser.",
+    "src": "6323794f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "Your trial has ended.": {
+    "t": "Seu período de teste terminou.",
+    "src": "b4d782a4",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "and to measure our marketing. You can change your choice at any time.": {
+    "t": "e para medir nosso marketing. Você pode mudar sua escolha a qualquer momento.",
+    "src": "91a22f67",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "comments ·": {
+    "t": "comentários ·",
+    "src": "a37a5146",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "fewer {0} a year": {
+    "t": "{0} a menos por ano",
+    "src": "da9d6884",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "meeting briefs": {
+    "t": "resumos de reuniões",
+    "src": "a04ce0fd",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "to close": {
+    "t": "para fechar",
+    "src": "0031ebe3",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "{0} for {1}": {
+    "t": "{0} para {1}",
+    "src": "4bbff9e7",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "{0} isn't attached. Remove it or attach it again before sending.": {
+    "t": "{0} não está anexado. Remova-o ou anexe-o novamente antes de enviar.",
+    "src": "7e502dc0",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "{0} rule \"{1}\"...": {
+    "t": "{0} regra \"{1}\"...",
+    "src": "5b9cc91f",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  },
+  "{0} unsubscribed": {
+    "t": "{0} inscrições canceladas",
+    "src": "f9f03fad",
+    "model": "claude-opus-5-5 (sessão de 2026-10-22)",
+    "date": "2026-10-22",
+    "up": "2058ecd"
+  }
+}

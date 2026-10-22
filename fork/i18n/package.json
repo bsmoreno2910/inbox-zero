@@ -1,0 +1,16 @@
+{
+  "name": "inbox-zero-ptbr-i18n",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Build-time pt-BR overlay for the bsmoreno2910/inbox-zero fork",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "lint:messages": "node src/cli.mjs lint"
+  },
+  "dependencies": {
+    "typescript": "6.0.3"
+  }
+}

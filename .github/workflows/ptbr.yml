@@ -1,0 +1,325 @@
+# pt-BR overlay pipeline for bsmoreno2910/inbox-zero.
+# Picks the newest upstream commit that upstream itself built and type-checked,
+# applies the translation overlay (fork/i18n) to a pristine checkout, type-checks
+# it, builds the unmodified docker/Dockerfile.prod, boots it, and publishes
+# ghcr.io/<owner>/inbox-zero-ptbr. Deploying to Easypanel is opt-in.
+name: ptbr
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # 03:17 BRT: build and (if PTBR_DEPLOY=nightly) deploy
+    - cron: "17 12,18 * * *" # build only
+  workflow_dispatch:
+    inputs:
+      upstream_ref:
+        description: "Commit do upstream (vazio = o mais recente elegível)"
+        default: ""
+      deploy:
+        description: "Publicar no Easypanel ao final (permite migrações de banco)"
+        type: boolean
+        default: false
+      force_build:
+        description: "Gerar a imagem mesmo se ela já existir"
+        type: boolean
+        default: false
+      retag_stable_to:
+        description: "Rollback: tag <up7>-<ov7> que deve voltar a ser :stable"
+        default: ""
+  push:
+    branches: [ptbr]
+    paths: ["fork/**", ".github/workflows/ptbr.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ptbr
+  cancel-in-progress: false
+
+env:
+  IMAGE: ghcr.io/${{ github.repository_owner }}/inbox-zero-ptbr
+  UPSTREAM: elie222/inbox-zero
+  UPSTREAM_IMAGE: ghcr.io/elie222/inbox-zero
+
+jobs:
+  resolve:
+    if: ${{ !inputs.retag_stable_to }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: write # disable inherited upstream workflows
+      contents: read
+      packages: read
+    outputs:
+      up_sha: ${{ steps.pick.outputs.up_sha }}
+      up7: ${{ steps.pick.outputs.up7 }}
+      ov_sha: ${{ steps.ov.outputs.ov_sha }}
+      tag: ${{ steps.ov.outputs.tag }}
+      skip: ${{ steps.exists.outputs.skip }}
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          path: overlay
+          persist-credentials: false
+      - name: Disable inherited upstream workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash overlay/fork/scripts/guard-workflows.sh
+      - name: Pick upstream commit
+        id: pick
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash overlay/fork/scripts/pick-upstream.sh "${{ inputs.upstream_ref }}" >> "$GITHUB_OUTPUT"
+      - name: Overlay revision
+        id: ov
+        run: |
+          ov_sha=$(git -C overlay rev-parse HEAD)
+          echo "ov_sha=$ov_sha" >> "$GITHUB_OUTPUT"
+          echo "tag=${{ steps.pick.outputs.up7 }}-${ov_sha:0:7}" >> "$GITHUB_OUTPUT"
+      - name: Skip if this pair was already built
+        id: exists
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          if [[ "${{ inputs.force_build }}" != "true" ]] && docker buildx imagetools inspect "$IMAGE:${{ steps.ov.outputs.tag }}" >/dev/null 2>&1; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"; echo "Image $IMAGE:${{ steps.ov.outputs.tag }} already exists."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  typecheck:
+    needs: resolve
+    if: needs.resolve.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      NODE_OPTIONS: "--max_old_space_size=12288"
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          repository: ${{ env.UPSTREAM }}
+          ref: ${{ needs.resolve.outputs.up_sha }}
+          path: src
+          persist-credentials: false
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: ${{ needs.resolve.outputs.ov_sha }}
+          path: overlay
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+      - name: Install pnpm (version pinned by upstream)
+        run: npm i -g "$(node -p "require('./src/package.json').packageManager")"
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('src/pnpm-lock.yaml') }}
+          restore-keys: pnpm-${{ runner.os }}-
+      - name: Install upstream dependencies
+        working-directory: src
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: "1"
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+        run: bash scripts/pnpm-install-without-desktop.sh --frozen-lockfile
+      - name: Generate Prisma client
+        working-directory: src/apps/web
+        run: pnpm exec prisma generate
+      - name: Type-check pristine upstream (baseline)
+        working-directory: src/apps/web
+        run: pnpm exec tsc --noEmit -p tsconfig.json 2>&1 | grep -E 'error TS' | sed -E 's/\([0-9]+,[0-9]+\)//' | sort > "$RUNNER_TEMP/tsc-base.txt" || true
+      - name: Apply the pt-BR overlay
+        run: |
+          npm ci --prefix overlay/fork/i18n --ignore-scripts --no-audit --no-fund
+          node overlay/fork/i18n/src/cli.mjs apply --src src --verify strict --build-id typecheck
+      - name: Type-check translated tree (fail only on new errors)
+        working-directory: src/apps/web
+        run: |
+          pnpm exec tsc --noEmit -p tsconfig.json 2>&1 | grep -E 'error TS' | sed -E 's/\([0-9]+,[0-9]+\)//' | sort > "$RUNNER_TEMP/tsc-new.txt" || true
+          new=$(comm -13 "$RUNNER_TEMP/tsc-base.txt" "$RUNNER_TEMP/tsc-new.txt")
+          echo "baseline errors: $(wc -l < "$RUNNER_TEMP/tsc-base.txt"), translated errors: $(wc -l < "$RUNNER_TEMP/tsc-new.txt")"
+          if [[ -n "$new" ]]; then echo "::error::the overlay introduced TypeScript errors"; echo "$new" | head -50; exit 1; fi
+
+  build:
+    needs: resolve
+    if: needs.resolve.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+          docker system prune -af >/dev/null 2>&1 || true
+          df -h / | tail -1
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          repository: ${{ env.UPSTREAM }}
+          ref: ${{ needs.resolve.outputs.up_sha }}
+          path: src
+          persist-credentials: false
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: ${{ needs.resolve.outputs.ov_sha }}
+          path: overlay
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+      - name: Apply the pt-BR overlay
+        run: |
+          npm ci --prefix overlay/fork/i18n --ignore-scripts --no-audit --no-fund
+          node overlay/fork/i18n/src/cli.mjs apply --src src --verify strict --build-id "${{ needs.resolve.outputs.tag }}" --out out
+          bash overlay/fork/scripts/changed-files-gate.sh src
+          node overlay/fork/i18n/src/cli.mjs report --out out --summary "$GITHUB_STEP_SUMMARY"
+          git -C src diff > out/transform.diff
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ptbr-report-${{ needs.resolve.outputs.tag }}
+          path: out/
+          retention-days: 30
+      - name: Build and push candidate image
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker buildx create --use --driver docker-container --name ptbr >/dev/null
+          docker buildx build --platform linux/amd64 --provenance=false --sbom=false -f src/docker/Dockerfile.prod \
+            --cache-from "type=registry,ref=$IMAGE:buildcache" \
+            --cache-to "type=registry,ref=$IMAGE:buildcache,mode=max" \
+            --label "org.opencontainers.image.revision=${{ needs.resolve.outputs.up_sha }}" \
+            --label "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
+            --label "org.opencontainers.image.licenses=AGPL-3.0" \
+            --label "io.inboxzero.upstream.revision=${{ needs.resolve.outputs.up_sha }}" \
+            --label "io.inboxzero.overlay.revision=${{ needs.resolve.outputs.ov_sha }}" \
+            --label "io.inboxzero.locale=pt-BR" \
+            -t "$IMAGE:cand-${{ needs.resolve.outputs.tag }}" --push src
+
+  smoke:
+    needs: [resolve, build]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      packages: read
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d postgres"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+      redis:
+        image: redis:7
+        options: >-
+          --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 10
+      redis-http:
+        image: hiett/serverless-redis-http@sha256:5b0bb9239fce53abf87b2018a7a0deb9ec7bd900c5360738fe5fbeeb426f9150
+        env:
+          SRH_CONNECTION_STRING: redis://redis:6379
+          SRH_MODE: env
+          SRH_TOKEN: smoke-token
+        ports: ["8079:80"]
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: ${{ needs.resolve.outputs.ov_sha }}
+          path: overlay
+          persist-credentials: false
+      - name: Boot the candidate and check the login page
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          bash overlay/fork/scripts/smoke-boot.sh "$IMAGE:cand-${{ needs.resolve.outputs.tag }}" \
+            "${{ needs.resolve.outputs.tag }}" overlay/fork/smoke/sentinels.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: smoke-log-${{ needs.resolve.outputs.tag }}
+          path: smoke-container.log
+          if-no-files-found: ignore
+
+  promote:
+    needs: [resolve, typecheck, smoke]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Tag the tested image
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          tag="${{ needs.resolve.outputs.tag }}"
+          docker buildx imagetools create -t "$IMAGE:$tag" -t "$IMAGE:${{ needs.resolve.outputs.up7 }}" -t "$IMAGE:latest" "$IMAGE:cand-$tag"
+          {
+            echo "### Imagem publicada"
+            echo ""
+            echo "\`$IMAGE:$tag\` (também \`:latest\`)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: [resolve, promote]
+    if: >-
+      !cancelled() && needs.resolve.result == 'success' &&
+      (needs.promote.result == 'success' || needs.resolve.outputs.skip == 'true') &&
+      (inputs.deploy == true ||
+       (github.event_name == 'schedule' && github.event.schedule == '17 6 * * *' && vars.PTBR_DEPLOY == 'nightly'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: ${{ needs.resolve.outputs.ov_sha }}
+          path: overlay
+          persist-credentials: false
+      - name: Migration gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ALLOW_MIGRATIONS: ${{ inputs.deploy == true || vars.PTBR_ALLOW_MIGRATIONS == 'true' }}
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          bash overlay/fork/scripts/migration-gate.sh "${{ needs.resolve.outputs.up_sha }}"
+      - name: Move :stable and trigger Easypanel
+        env:
+          DEPLOY_WEBHOOK: ${{ secrets.PTBR_EASYPANEL_DEPLOY_WEBHOOK }}
+          APP_URL: ${{ vars.PTBR_APP_URL }}
+        run: |
+          tag="${{ needs.resolve.outputs.tag }}"
+          if docker buildx imagetools inspect "$IMAGE:stable" >/dev/null 2>&1; then
+            docker buildx imagetools create -t "$IMAGE:stable-prev" "$IMAGE:stable"
+          fi
+          docker buildx imagetools create -t "$IMAGE:stable" "$IMAGE:$tag"
+          if [[ -z "$DEPLOY_WEBHOOK" ]]; then echo "::warning::PTBR_EASYPANEL_DEPLOY_WEBHOOK not set; :stable moved but Easypanel was not called"; exit 0; fi
+          curl -fsS --retry 3 --max-time 60 "$DEPLOY_WEBHOOK" -o /dev/null
+          if [[ -n "$APP_URL" ]]; then
+            for _ in $(seq 1 40); do
+              if curl -fsS "$APP_URL/login" | grep -q "data-ptbr-build=\"$tag\""; then echo "live: $tag"; exit 0; fi
+              sleep 15
+            done
+            echo "::error::$APP_URL did not report build $tag within 10 minutes. Check Easypanel; roll back with retag_stable_to."
+            exit 1
+          fi
+
+  rollback:
+    if: ${{ inputs.retag_stable_to != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: production
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Point :stable back and trigger Easypanel
+        env:
+          DEPLOY_WEBHOOK: ${{ secrets.PTBR_EASYPANEL_DEPLOY_WEBHOOK }}
+        run: |
+          echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+          docker buildx imagetools create -t "$IMAGE:stable" "$IMAGE:${{ inputs.retag_stable_to }}"
+          if [[ -n "$DEPLOY_WEBHOOK" ]]; then curl -fsS --retry 3 --max-time 60 "$DEPLOY_WEBHOOK" -o /dev/null; fi

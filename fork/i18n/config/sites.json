@@ -1,0 +1,90 @@
+{
+  "$comment": "Exact-text edits outside the literal contexts. If a rule's match count differs from `expect`, the rule is skipped and reported (English stays). Only `required` rules fail the build. {{BUILD_ID}} is replaced by --build-id.",
+  "rules": [
+    {
+      "id": "html-lang-layout",
+      "file": "apps/web/app/layout.tsx",
+      "type": "replace",
+      "find": "<html lang=\"en\"",
+      "replace": "<html lang=\"pt-BR\" data-ptbr-build=\"{{BUILD_ID}}\"",
+      "expect": 1,
+      "required": true
+    },
+    {
+      "id": "html-lang-global-error",
+      "file": "apps/web/app/global-error.tsx",
+      "type": "replace",
+      "find": "<html lang=\"en\"",
+      "replace": "<html lang=\"pt-BR\"",
+      "expect": 1,
+      "required": false
+    },
+    {
+      "id": "toast-runtime-import",
+      "file": "apps/web/components/Toast.tsx",
+      "type": "replace",
+      "find": "import { Toaster as SonnerToaster, toast } from \"sonner\";",
+      "replace": "import { Toaster as SonnerToaster, toast as __sonnerToast } from \"sonner\";\nimport { __ptbrToast } from \"@/__ptbr__/runtime\";",
+      "expect": 1,
+      "required": false,
+      "group": "toast"
+    },
+    {
+      "id": "toast-runtime-wrap",
+      "file": "apps/web/components/Toast.tsx",
+      "type": "afterImports",
+      "code": "\n// pt-BR overlay: translate dynamic toast text (server errors) at display time.\nconst toast = __ptbrToast(__sonnerToast);\n",
+      "expect": 1,
+      "required": false,
+      "group": "toast"
+    },
+    {
+      "id": "sidenav-import",
+      "file": "apps/web/components/SideNavMenu.tsx",
+      "type": "afterImports",
+      "code": "import { __ptbr } from \"@/__ptbr__/runtime\";\n",
+      "expect": 1,
+      "required": false,
+      "group": "sidenav"
+    },
+    {
+      "id": "sidenav-tooltip",
+      "file": "apps/web/components/SideNavMenu.tsx",
+      "type": "replace",
+      "find": "tooltip={item.name}",
+      "replace": "tooltip={__ptbr(item.name)}",
+      "expect": 1,
+      "required": false,
+      "group": "sidenav"
+    },
+    {
+      "id": "sidenav-label",
+      "file": "apps/web/components/SideNavMenu.tsx",
+      "type": "replace",
+      "find": "<span>{item.name}</span>",
+      "replace": "<span>{__ptbr(item.name)}</span>",
+      "expect": 1,
+      "required": false,
+      "group": "sidenav"
+    },
+    {
+      "id": "error-messages-import",
+      "file": "apps/web/app/(app)/ErrorMessages.tsx",
+      "type": "afterImports",
+      "code": "import { __ptbr } from \"@/__ptbr__/runtime\";\n",
+      "expect": 1,
+      "required": false,
+      "group": "error-messages"
+    },
+    {
+      "id": "error-messages-text",
+      "file": "apps/web/app/(app)/ErrorMessages.tsx",
+      "type": "replace",
+      "find": "{error.message}\n",
+      "replace": "{__ptbr(error.message)}\n",
+      "expect": 1,
+      "required": false,
+      "group": "error-messages"
+    }
+  ]
+}
