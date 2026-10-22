@@ -11,6 +11,24 @@
       "required": true
     },
     {
+      "id": "layout-title",
+      "file": "apps/web/app/layout.tsx",
+      "type": "replace",
+      "find": "const title = `${BRAND_NAME} | Automate and clean your inbox`;",
+      "replace": "const title = `${BRAND_NAME} | Automatize e organize sua caixa de entrada`;",
+      "expect": 1,
+      "required": false
+    },
+    {
+      "id": "layout-description",
+      "file": "apps/web/app/layout.tsx",
+      "type": "replace",
+      "find": "\"Your AI executive assistant to reach inbox zero fast. Automate emails, bulk unsubscribe, block cold emails, and analytics. Open-source\";",
+      "replace": "\"Seu assistente de IA para organizar a caixa de entrada. Automatize e-mails, cancele inscrições em massa, bloqueie e-mails indesejados e acompanhe análises. Código aberto.\";",
+      "expect": 1,
+      "required": false
+    },
+    {
       "id": "html-lang-global-error",
       "file": "apps/web/app/global-error.tsx",
       "type": "replace",

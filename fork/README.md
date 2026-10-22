@@ -70,18 +70,28 @@ npm test && node src/cli.mjs lint
 
 Nunca rode `apply` no clone que você usa para acompanhar o oficial: use uma cópia.
 
+## Easypanel
+
+O serviço `inbox-zero-web` usa **Fonte → Imagem Docker** `ghcr.io/bsmoreno2910/inbox-zero-ptbr:stable`
+(desde 22/10/2026). O domínio continua na porta 80: a variável `PORT=80` do ambiente vale para a
+imagem. Nenhuma outra variável precisou mudar.
+
 ## Configuração no GitHub (uma vez)
 
-- **Settings → Environments → `production`**: segredo `PTBR_EASYPANEL_DEPLOY_WEBHOOK` com a URL
-  de "Gatilho de Implantação" do serviço `inbox-zero-web` no Easypanel.
+- **Settings → Environments → `production`**:
+  - segredo `PTBR_CRON_SECRET` com o mesmo valor de `CRON_SECRET` do Easypanel. Sem ele o
+    workflow `ptbr-cron` não renova as assinaturas do Outlook e os e-mails novos deixam de chegar
+    em ~3 dias;
+  - segredo `PTBR_EASYPANEL_DEPLOY_WEBHOOK` com a URL de "Gatilho de Implantação" do serviço
+    `inbox-zero-web` no Easypanel (opcional: sem ele, depois de mover `:stable` é só clicar em
+    Implantar no Easypanel).
 - **Settings → Variables**:
   - `PTBR_APP_URL` = `https://tools-inbox-zero-web.vtc.srv.br`
   - `PTBR_DEPLOY` = `nightly` para publicar sozinho às 03:17 (horário de Brasília); vazio = desligado
   - `PTBR_ALLOW_MIGRATIONS` = `true` só se aceitar que o deploy noturno aplique migrações de banco
 - Opcional, tradução automática de textos novos: segredos `PTBR_LLM_BASE_URL`, `PTBR_LLM_API_KEY`
   e variável `PTBR_LLM_MODEL` (qualquer API compatível com OpenAI).
-- **Packages → inbox-zero-ptbr → Package settings**: tornar público, para o Easypanel baixar sem
-  senha (o código já é público por causa da licença AGPL).
+- O pacote `inbox-zero-ptbr` no GHCR já é público, então o Easypanel baixa sem senha.
 
 ## Publicar uma versão manualmente
 
