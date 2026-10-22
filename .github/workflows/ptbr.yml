@@ -289,6 +289,7 @@ jobs:
       - name: Move :stable and trigger Easypanel
         env:
           DEPLOY_WEBHOOK: ${{ secrets.PTBR_EASYPANEL_DEPLOY_WEBHOOK }}
+          PANEL_URL: ${{ vars.PTBR_PANEL_URL }}
           APP_URL: ${{ vars.PTBR_APP_URL }}
         run: |
           tag="${{ needs.resolve.outputs.tag }}"
@@ -297,11 +298,8 @@ jobs:
           fi
           docker buildx imagetools create -t "$IMAGE:stable" "$IMAGE:$tag"
           if [[ -z "$DEPLOY_WEBHOOK" ]]; then echo "::warning::PTBR_EASYPANEL_DEPLOY_WEBHOOK not set; :stable moved but Easypanel was not called"; exit 0; fi
-          # curl's own errors are discarded: they can name the webhook host, and this
-          # repository's logs are public.
-          code=$(curl -s --connect-timeout 15 --max-time 60 --retry 2 -o /dev/null -w '%{http_code}' "$DEPLOY_WEBHOOK" 2>/dev/null) || code=000
-          if [[ "$code" != 2* ]]; then
-            echo "::error::Easypanel deploy webhook failed (HTTP $code; 000 = could not connect). :stable already points to $tag, so clicking Implantar in Easypanel deploys it. Check that PTBR_EASYPANEL_DEPLOY_WEBHOOK uses the panel's public https address."
+          if ! bash overlay/fork/scripts/easypanel-deploy.sh; then
+            echo "::error:::stable already points to $tag; clicking Implantar in Easypanel deploys it."
             exit 1
           fi
           if [[ -n "$APP_URL" ]]; then
@@ -322,10 +320,15 @@ jobs:
       contents: read
       packages: write
     steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          path: overlay
+          persist-credentials: false
       - name: Point :stable back and trigger Easypanel
         env:
           DEPLOY_WEBHOOK: ${{ secrets.PTBR_EASYPANEL_DEPLOY_WEBHOOK }}
+          PANEL_URL: ${{ vars.PTBR_PANEL_URL }}
         run: |
           echo "${{ github.token }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
           docker buildx imagetools create -t "$IMAGE:stable" "$IMAGE:${{ inputs.retag_stable_to }}"
-          if [[ -n "$DEPLOY_WEBHOOK" ]]; then curl -fsS --retry 3 --max-time 60 "$DEPLOY_WEBHOOK" -o /dev/null; fi
+          if [[ -n "$DEPLOY_WEBHOOK" ]]; then bash overlay/fork/scripts/easypanel-deploy.sh; fi
