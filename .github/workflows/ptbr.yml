@@ -96,15 +96,11 @@ jobs:
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
-          repository: ${{ env.UPSTREAM }}
-          ref: ${{ needs.resolve.outputs.up_sha }}
-          path: src
-          persist-credentials: false
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-        with:
           ref: ${{ needs.resolve.outputs.ov_sha }}
           path: overlay
           persist-credentials: false
+      - name: Fetch upstream source
+        run: bash overlay/fork/scripts/fetch-upstream.sh "${{ needs.resolve.outputs.up_sha }}" src
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "24"
@@ -155,15 +151,11 @@ jobs:
           df -h / | tail -1
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
-          repository: ${{ env.UPSTREAM }}
-          ref: ${{ needs.resolve.outputs.up_sha }}
-          path: src
-          persist-credentials: false
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-        with:
           ref: ${{ needs.resolve.outputs.ov_sha }}
           path: overlay
           persist-credentials: false
+      - name: Fetch upstream source
+        run: bash overlay/fork/scripts/fetch-upstream.sh "${{ needs.resolve.outputs.up_sha }}" src
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "24"

@@ -19,11 +19,8 @@ jobs:
         with:
           path: overlay
           persist-credentials: false
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-        with:
-          repository: elie222/inbox-zero
-          path: src
-          persist-credentials: false
+      - name: Fetch upstream main
+        run: bash overlay/fork/scripts/fetch-upstream.sh main src
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "24"
